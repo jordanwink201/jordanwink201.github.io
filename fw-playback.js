@@ -6989,33 +6989,68 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Footer = function Footer() {
   return _react2.default.createElement(
     'div',
-    { id: 'social' },
+    { className: 'social' },
     _react2.default.createElement(
-      'a',
-      {
-        className: 'animated fadeInLeft',
-        href: 'https://github.com/jordanwink201',
-        rel: 'noopener noreferrer',
-        target: '_blank' },
-      _react2.default.createElement('i', { className: 'icon-github-square' })
-    ),
-    _react2.default.createElement(
-      'a',
-      {
-        className: 'animated fadeInLeft',
-        href: 'https://www.linkedin.com/injordanwinkelman',
-        rel: 'noopener noreferrer',
-        target: '_blank' },
-      _react2.default.createElement('i', { className: 'icon-linkedin-square' })
-    ),
-    _react2.default.createElement(
-      'a',
-      {
-        className: 'animated fadeInLeft',
-        href: 'mailto:jordanwink201@gmail.com',
-        rel: 'noopener noreferrer',
-        target: '_blank' },
-      _react2.default.createElement('i', { className: 'icon-google-plus-square' })
+      'div',
+      { className: 'container' },
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-md-offset-2 col-md-8' },
+          _react2.default.createElement(
+            'section',
+            {
+              style: {
+                display: 'flex'
+              } },
+            _react2.default.createElement(
+              'span',
+              { className: 'list' },
+              _react2.default.createElement(
+                'a',
+                {
+                  href: 'https://github.com/jordanwink201',
+                  rel: 'noopener noreferrer',
+                  target: '_blank' },
+                _react2.default.createElement('i', { className: 'icon-github-square' })
+              ),
+              _react2.default.createElement(
+                'a',
+                {
+                  href: 'https://www.linkedin.com/injordanwinkelman',
+                  rel: 'noopener noreferrer',
+                  target: '_blank' },
+                _react2.default.createElement('i', { className: 'icon-linkedin-square' })
+              ),
+              _react2.default.createElement(
+                'a',
+                {
+                  href: 'mailto:jordanwink201@gmail.com',
+                  rel: 'noopener noreferrer',
+                  target: '_blank' },
+                _react2.default.createElement('i', { className: 'icon-google-plus-square' })
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              {
+                style: {
+                  fontSize: '24px',
+                  marginBottom: '15px'
+                } },
+              'This responsive website was designed, developed, and mainted using ES6 & React. Average load time \uD83C\uDFC3 ',
+              _react2.default.createElement(
+                'strong',
+                null,
+                '0.35s'
+              ),
+              '.'
+            )
+          )
+        )
+      )
     )
   );
 };
@@ -11941,25 +11976,55 @@ var Header = function Header() {
     { className: 'row' },
     _react2.default.createElement(
       'div',
-      { className: 'col-lg-offset-4 col-lg-4 col-md-offset-1 col-md-5 col-sm-6' },
+      { className: 'col-md-offset-2 col-md-8' },
       _react2.default.createElement(
         'span',
-        { className: 'bio animated fadeInRight' },
+        { className: 'bio' },
         _react2.default.createElement(
-          'p',
-          {
-            style: {
-              fontSize: '18px'
-            } },
-          'Currently working on...',
-          _react2.default.createElement('br', null),
+          'div',
+          null,
           _react2.default.createElement(
-            'span',
+            'p',
             {
               style: {
-                fontWeight: 'bold'
+                fontSize: '24px',
+                marginBottom: '15px'
               } },
-            'enterprise e-commerce solutions'
+            '\uD83D\uDC4B I\'m ',
+            _react2.default.createElement(
+              'strong',
+              null,
+              'Jordan'
+            ),
+            '.',
+            _react2.default.createElement('br', null),
+            _react2.default.createElement('br', null),
+            'I don\'t believe in titles but I\'m good at designing pixel-perfect user intefaces, implementing complex user experiences, and being a good fun-loving teammate.'
+          ),
+          _react2.default.createElement(
+            'p',
+            {
+              style: {
+                fontSize: '24px'
+              } },
+            'My new favorite tools are',
+            _react2.default.createElement(
+              'span',
+              {
+                style: {
+                  fontWeight: 'bold'
+                } },
+              ' functional.js '
+            ),
+            '&',
+            _react2.default.createElement(
+              'span',
+              {
+                style: {
+                  fontWeight: 'bold'
+                } },
+              ' TypeScript'
+            )
           )
         ),
         _react2.default.createElement('img', { className: 'profileImg', src: _profile2.default })
@@ -12485,16 +12550,20 @@ var Process = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          { className: 'col-sm-12 col-md-6', id: 'projectImgContainer' },
+          { className: 'col-sm-12 col-md-6' },
           _react2.default.createElement(
-            _reactResponsive2.default,
-            { maxWidth: queries.tablet },
-            _react2.default.createElement('img', { src: getImage(mobile), width: '100%' })
-          ),
-          _react2.default.createElement(
-            _reactResponsive2.default,
-            { minWidth: queries.tablet },
-            _react2.default.createElement('img', { src: getImage(large), width: '100%' })
+            'div',
+            { id: 'projectImgContainer' },
+            _react2.default.createElement(
+              _reactResponsive2.default,
+              { maxWidth: queries.tablet },
+              _react2.default.createElement('img', { src: getImage(mobile), width: '100%' })
+            ),
+            _react2.default.createElement(
+              _reactResponsive2.default,
+              { minWidth: queries.tablet },
+              _react2.default.createElement('img', { src: getImage(large), width: '100%' })
+            )
           )
         )
       );
@@ -12574,9 +12643,10 @@ var App = function (_Component) {
           'div',
           { className: 'container' },
           _react2.default.createElement(_header2.default, null),
-          _react2.default.createElement(_detail2.default, null),
-          _react2.default.createElement(_footer2.default, null)
-        )
+          _react2.default.createElement(_detail2.default, null)
+        ),
+        _react2.default.createElement('div', { id: 'bottomCircleModifier' }),
+        _react2.default.createElement(_footer2.default, null)
       );
     }
   }]);
@@ -12755,58 +12825,62 @@ var Project = function (_Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'container' },
-        _react2.default.createElement(
-          'a',
-          { className: 'home', href: '#/' },
-          _react2.default.createElement('i', { className: 'icon-arrow-left' }),
-          'All Projects'
-        ),
-        _react2.default.createElement(
-          'span',
-          { className: 'name' },
-          type
-        ),
-        _react2.default.createElement(
-          'h1',
-          {
-            style: {
-              marginTop: '6rem',
-              textAlign: 'center'
-            } },
-          title
-        ),
+        null,
         _react2.default.createElement(
           'div',
-          { className: getClasses(name, largeImg) },
+          { className: 'container' },
           _react2.default.createElement(
             'a',
-            { href: link, target: '_blank' },
+            { className: 'home', href: '#/' },
+            _react2.default.createElement('i', { className: 'icon-arrow-left' }),
+            'All Projects'
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'name' },
+            type
+          ),
+          _react2.default.createElement(
+            'h1',
+            {
+              style: {
+                marginTop: '6rem',
+                textAlign: 'center'
+              } },
+            title
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: getClasses(name, largeImg) },
             _react2.default.createElement(
-              'div',
-              { className: 'overlay borderRadiusHigh' },
+              'a',
+              { href: link, target: '_blank' },
               _react2.default.createElement(
-                'span',
-                { className: 'overlay--button' },
-                'Go To Website'
+                'div',
+                { className: 'overlay borderRadiusHigh' },
+                _react2.default.createElement(
+                  'span',
+                  { className: 'overlay--button' },
+                  'Go To Website'
+                )
               )
             )
-          )
+          ),
+          _react2.default.createElement(
+            'p',
+            {
+              style: {
+                marginBottom: '3rem',
+                marginTop: '3rem',
+                textAlign: 'center'
+              } },
+            description
+          ),
+          _react2.default.createElement('div', { className: 'seperator' }),
+          this.renderProjectDetails(project),
+          shouldRenderProcess ? _react2.default.createElement(_process2.default, { project: project }) : null
         ),
-        _react2.default.createElement(
-          'p',
-          {
-            style: {
-              fontSize: 'large',
-              marginBottom: '3rem',
-              marginTop: '3rem',
-              textAlign: 'center'
-            } },
-          description
-        ),
-        _react2.default.createElement('div', { className: 'seperator' }),
-        this.renderProjectDetails(project),
-        shouldRenderProcess ? _react2.default.createElement(_process2.default, { project: project }) : null,
+        _react2.default.createElement('div', { id: 'bottomCircleModifier' }),
         _react2.default.createElement(_footer2.default, null)
       );
     }
@@ -14563,7 +14637,7 @@ module.exports = __webpack_require__.p + "c2d24bc5eae52b9f060bee33196faedc.jpg";
 /* 158 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "524ab7518c01d3c2efeff4c97cfc9516.jpg";
+module.exports = __webpack_require__.p + "6195f5007163986a7885a5a8b5327e23.png";
 
 /***/ }),
 /* 159 */
