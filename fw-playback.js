@@ -12962,22 +12962,18 @@ var Schedule = function Schedule() {
       'div',
       { className: 'container' },
       _react2.default.createElement(
-        'div',
-        { className: 'row' },
-        _react2.default.createElement(
-          'span',
-          { className: 'name' },
-          'Daily Schedule'
-        ),
-        _react2.default.createElement(
-          'h1',
-          {
-            style: {
-              color: 'black',
-              textAlign: 'center'
-            } },
-          'Achieving Deep Focus'
-        )
+        'span',
+        { className: 'name' },
+        'Daily Schedule'
+      ),
+      _react2.default.createElement(
+        'h1',
+        {
+          style: {
+            color: 'black',
+            textAlign: 'center'
+          } },
+        'Achieving Deep Focus'
       ),
       _react2.default.createElement(
         'div',
@@ -13323,6 +13319,11 @@ var Bigcommerce = function (_Component) {
     key: 'componentWillMount',
     value: function componentWillMount() {
       window.scrollTo(0, 0);
+
+      var name = _data2.default[0].name;
+
+
+      window.document.title = name.charAt(0).toUpperCase() + name.slice(1) + ' by Jordan Winkelman';
     }
   }, {
     key: 'render',
@@ -13378,17 +13379,13 @@ var Bigcommerce = function (_Component) {
             { className: 'container' },
             _react2.default.createElement(
               'div',
-              { className: 'row' },
+              { className: 'flex-center flex-col' },
               _react2.default.createElement(
-                'div',
-                { className: 'flex-center flex-col' },
-                _react2.default.createElement(
-                  'span',
-                  { style: { fontSize: '18px' }, className: 'name' },
-                  'cart-to-pay conversion rate'
-                ),
-                _react2.default.createElement('img', { className: 'chart', src: (0, _project.getImage)('conversionRate') })
-              )
+                'span',
+                { style: { fontSize: '18px' }, className: 'name' },
+                'cart-to-pay conversion rate'
+              ),
+              _react2.default.createElement('img', { className: 'chart', src: (0, _project.getImage)('conversionRate') })
             )
           )
         ),
@@ -13399,18 +13396,14 @@ var Bigcommerce = function (_Component) {
             'div',
             { className: 'container' },
             _react2.default.createElement(
+              'p',
+              { className: 'description' },
+              process[1]['description']
+            ),
+            _react2.default.createElement(
               'div',
-              { className: 'row' },
-              _react2.default.createElement(
-                'p',
-                { className: 'description' },
-                process[1]['description']
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'flex-center flex-col' },
-                _react2.default.createElement('img', { className: 'image', src: (0, _project.getImage)(process[1]['large']), width: '60%' })
-              )
+              { className: 'flex-center flex-col' },
+              _react2.default.createElement('img', { className: 'image', src: (0, _project.getImage)(process[1]['large']), width: '60%' })
             )
           )
         ),
@@ -14134,68 +14127,64 @@ var About = function (_Component) {
             'div',
             { className: 'container' },
             _react2.default.createElement(
-              'div',
-              { className: 'row' },
+              'h1',
+              {
+                style: {
+                  color: 'white',
+                  textAlign: 'center'
+                } },
+              'I like to have fun, in all kinds of places'
+            ),
+            _react2.default.createElement(
+              'h1',
+              {
+                style: {
+                  textAlign: 'center'
+                } },
+              '\uD83C\uDFD4 \uD83C\uDFD6 \uD83C\uDFD5 \uD83C\uDFDC \uD83C\uDF0B \uD83C\uDFDE'
+            ),
+            _react2.default.createElement(
+              'span',
+              {
+                className: 'subHeader',
+                style: {
+                  color: 'white',
+                  fontSize: '16px',
+                  fontWeight: '300',
+                  marginBottom: '20px',
+                  textAlign: 'center'
+                } },
               _react2.default.createElement(
-                'h1',
+                'strong',
                 {
                   style: {
-                    color: 'white',
-                    textAlign: 'center'
+                    color: '#ffffff',
+                    fontSize: '18px'
                   } },
-                'I like to have fun, in all kinds of places'
+                '18%'
               ),
+              ' complete,',
               _react2.default.createElement(
-                'h1',
+                'strong',
                 {
                   style: {
-                    textAlign: 'center'
+                    color: '#5B4AEA',
+                    fontSize: '22px',
+                    textShadow: '1px 1px 1px rgba(65, 47, 212, 0.15)'
                   } },
-                '\uD83C\uDFD4 \uD83C\uDFD6 \uD83C\uDFD5 \uD83C\uDFDC \uD83C\uDF0B \uD83C\uDFDE'
+                ' 72%'
               ),
+              ' left to go! ',
               _react2.default.createElement(
                 'span',
-                {
-                  className: 'subHeader',
-                  style: {
-                    color: 'white',
-                    fontSize: '16px',
-                    fontWeight: '300',
-                    marginBottom: '20px',
-                    textAlign: 'center'
-                  } },
-                _react2.default.createElement(
-                  'strong',
-                  {
-                    style: {
-                      color: '#ffffff',
-                      fontSize: '18px'
-                    } },
-                  '18%'
-                ),
-                ' complete,',
-                _react2.default.createElement(
-                  'strong',
-                  {
-                    style: {
-                      color: '#5B4AEA',
-                      fontSize: '22px',
-                      textShadow: '1px 1px 1px rgba(65, 47, 212, 0.15)'
-                    } },
-                  ' 72%'
-                ),
-                ' left to go! ',
-                _react2.default.createElement(
-                  'span',
-                  { style: plane },
-                  '\uD83D\uDEEB'
-                )
-              ),
-              _react2.default.createElement(
-                'div',
-                { className: 'col-lg-12 col-lg-offset-0 col-md-8 col-md-offset-2' },
-                _react2.default.createElement('img', { style: map, src: _map2.default })
+                { style: plane },
+                '\uD83D\uDEEB'
               )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'col-lg-12 col-lg-offset-0 col-md-8 col-md-offset-2' },
+              _react2.default.createElement('img', { style: map, src: _map2.default })
             )
           )
         ),
@@ -14288,6 +14277,11 @@ var App = function (_Component) {
   }
 
   _createClass(App, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      window.document.title = 'Full Stack Engineer';
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -14323,15 +14317,7 @@ var App = function (_Component) {
               ),
               _react2.default.createElement(
                 'div',
-                {
-                  className: 'col-md-6',
-                  style: {
-                    alignItems: 'flex-start',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    height: '550px',
-                    justifyContent: 'center'
-                  } },
+                { className: 'col-md-6 textContainer' },
                 _react2.default.createElement(
                   'span',
                   {
@@ -14380,39 +14366,25 @@ var App = function (_Component) {
         _react2.default.createElement(_openSource2.default, null),
         _react2.default.createElement(
           'div',
-          { className: 'container' },
+          { className: 'container moreButtonContainer' },
           _react2.default.createElement(
-            'div',
-            { className: 'row' },
+            _reactRouterDom.Link,
+            { to: '/me' },
             _react2.default.createElement(
-              'div',
-              {
-                className: 'col-xs-12',
-                style: {
-                  marginBottom: '40px',
-                  marginTop: '80px',
-                  textAlign: 'center'
-                } },
+              'button',
+              { className: 'primaryGreen' },
+              'I\'m more than just an engineer',
               _react2.default.createElement(
-                _reactRouterDom.Link,
-                { to: '/me' },
-                _react2.default.createElement(
-                  'button',
-                  { className: 'primaryGreen' },
-                  'I\'m more than just an engineer',
-                  _react2.default.createElement(
-                    'span',
-                    {
-                      style: {
-                        paddingLeft: '10px'
-                      } },
-                    _react2.default.createElement(_arrowRightC2.default, {
-                      className: 'svgFix',
-                      size: iconStyles.size.sm,
-                      style: iconStyles.styles
-                    })
-                  )
-                )
+                'span',
+                {
+                  style: {
+                    paddingLeft: '10px'
+                  } },
+                _react2.default.createElement(_arrowRightC2.default, {
+                  className: 'svgFix',
+                  size: iconStyles.size.sm,
+                  style: iconStyles.styles
+                })
               )
             )
           )
@@ -14500,6 +14472,11 @@ var Project = function (_Component) {
     key: 'componentWillMount',
     value: function componentWillMount() {
       window.scrollTo(0, 0);
+
+      var name = _data2.default[this.props.match.params.id].name;
+
+
+      window.document.title = name.charAt(0).toUpperCase() + name.slice(1) + ' by Jordan Winkelman';
     }
   }, {
     key: 'renderProjectDetails',
